@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.appcompat.app.ActionBar
+import androidx.fragment.app.Fragment
 import com.example.penjualan.databinding.ActivityProfileBinding
 import com.google.firebase.auth.FirebaseAuth
 
@@ -30,10 +31,7 @@ class ProfileActivity : AppCompatActivity() {
             firebaseAuth.signOut()
             checkUser()
         }
-        binding.penjualanBtn.setOnClickListener {
-            val intent = Intent(this, PenjualanActivity::class.java)
-            startActivity(intent)
-        }
+
     }
 
     private fun checkUser(){

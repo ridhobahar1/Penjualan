@@ -37,6 +37,7 @@ class LoginActivity : AppCompatActivity() {
         actionBar = supportActionBar!!
         actionBar.title = "Login"
 
+
             //configure progress dialog
         progresDialog = ProgressDialog(this)
         progresDialog.setTitle("Please Wait")
@@ -88,7 +89,7 @@ class LoginActivity : AppCompatActivity() {
                 val firebaseUser = firebaseAuth.currentUser
                 val email = firebaseUser!!.email
                 Toast.makeText(this, "Logged In as $email", Toast.LENGTH_SHORT).show()
-                startActivity(Intent(this,ProfileActivity::class.java))
+                startActivity(Intent(this,bottomnavigationActivity::class.java))
                 finish()
             }
             .addOnFailureListener {e->
@@ -103,7 +104,7 @@ class LoginActivity : AppCompatActivity() {
         //get current user
         val firebaseUser = firebaseAuth.currentUser
         if (firebaseUser != null){
-            startActivity(Intent(this, ProfileActivity::class.java))
+            startActivity(Intent(this, bottomnavigationActivity::class.java))
             finish()
         }
     }
