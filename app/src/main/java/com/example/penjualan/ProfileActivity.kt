@@ -32,6 +32,21 @@ class ProfileActivity : AppCompatActivity() {
             checkUser()
         }
 
+        binding.BtnPembayaran.setOnClickListener {
+            startActivity(Intent(this, PembayaranActivity::class.java))
+
+        }
+        binding.BtnPenjualan.setOnClickListener {
+            startActivity(Intent(this, PenjualanActivity::class.java))
+
+        }
+        binding.BtnUser.setOnClickListener {
+            startActivity(Intent(this, UserActivity::class.java))
+
+        }
+
+
+
     }
 
     private fun checkUser(){

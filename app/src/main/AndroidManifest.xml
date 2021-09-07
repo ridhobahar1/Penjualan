@@ -12,11 +12,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Penjualan">
         <activity
-            android:name=".bottomnavigationActivity"
-            android:exported="true"
-            android:label="@string/title_activity_bottomnavigation" />
+            android:name=".UserActivity"
+            android:exported="true" />
         <activity
-            android:name=".Penjualan"
+            android:name=".PembayaranActivity"
             android:exported="true" />
         <activity
             android:name=".PenjualanActivity"
