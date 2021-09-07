@@ -30,6 +30,10 @@ class ProfileActivity : AppCompatActivity() {
             firebaseAuth.signOut()
             checkUser()
         }
+        binding.penjualanBtn.setOnClickListener {
+            val intent = Intent(this, PenjualanActivity::class.java)
+            startActivity(intent)
+        }
     }
 
     private fun checkUser(){
@@ -45,4 +49,6 @@ class ProfileActivity : AppCompatActivity() {
 
         }
     }
+
+
 }
