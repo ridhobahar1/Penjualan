@@ -1,6 +1,5 @@
 package com.example.penjualan
 
-import android.app.Activity
 import android.app.ProgressDialog
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -9,7 +8,6 @@ import android.text.TextUtils
 import android.util.Patterns
 import android.widget.Toast
 import androidx.appcompat.app.ActionBar
-import com.example.penjualan.databinding.ActivityLoginBinding
 import com.example.penjualan.databinding.ActivitySignUpBinding
 import com.google.firebase.auth.FirebaseAuth
 
@@ -82,7 +80,7 @@ class SignUpActivity : AppCompatActivity() {
                 val email = firebaseUser!!.email
                 Toast.makeText(this,"Account created with email $email", Toast.LENGTH_SHORT).show()
 
-                startActivity(Intent(this,ProfileActivity::class.java))
+                startActivity(Intent(this,DashboardAcitivty::class.java))
                 finish()
             }
             .addOnFailureListener { e->

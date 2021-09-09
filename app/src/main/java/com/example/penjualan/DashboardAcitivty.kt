@@ -3,14 +3,15 @@ package com.example.penjualan
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 import androidx.appcompat.app.ActionBar
 import androidx.fragment.app.Fragment
-import com.example.penjualan.databinding.ActivityProfileBinding
+import com.example.penjualan.databinding.ActivityDashboardBinding
 import com.google.firebase.auth.FirebaseAuth
 
-class ProfileActivity : AppCompatActivity() {
+class DashboardAcitivty : AppCompatActivity() {
 
-    private lateinit var binding: ActivityProfileBinding
+    private lateinit var binding: ActivityDashboardBinding
 
     private lateinit var actionBar: ActionBar
 
@@ -18,7 +19,7 @@ class ProfileActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityProfileBinding.inflate(layoutInflater)
+        binding = ActivityDashboardBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         actionBar = supportActionBar!!
@@ -26,6 +27,7 @@ class ProfileActivity : AppCompatActivity() {
 
         firebaseAuth = FirebaseAuth.getInstance()
         checkUser()
+
 
         binding.logoutBtn.setOnClickListener {
             firebaseAuth.signOut()

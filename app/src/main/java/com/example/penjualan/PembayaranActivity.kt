@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.appcompat.app.ActionBar
 import com.example.penjualan.databinding.ActivityPembayaranBinding
-import com.example.penjualan.databinding.ActivityProfileBinding
+import com.example.penjualan.databinding.ActivityDashboardBinding
 
 class PembayaranActivity : AppCompatActivity() {
 

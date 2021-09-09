@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Penjualan">
         <activity
+            android:name=".BarangActivity"
+            android:exported="true" />
+        <activity
             android:name=".UserActivity"
             android:exported="true" />
         <activity
@@ -21,7 +24,7 @@
             android:name=".PenjualanActivity"
             android:exported="true" />
         <activity
-            android:name=".ProfileActivity"
+            android:name=".DashboardAcitivty"
             android:exported="true" />
         <activity
             android:name=".SignUpActivity"

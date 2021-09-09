@@ -10,7 +10,6 @@ import android.widget.Toast
 import androidx.appcompat.app.ActionBar
 import com.example.penjualan.databinding.ActivityLoginBinding
 import com.google.firebase.auth.FirebaseAuth
-import java.util.regex.Pattern
 
 class LoginActivity : AppCompatActivity() {
 
@@ -89,7 +88,7 @@ class LoginActivity : AppCompatActivity() {
                 val firebaseUser = firebaseAuth.currentUser
                 val email = firebaseUser!!.email
                 Toast.makeText(this, "Logged In as $email", Toast.LENGTH_SHORT).show()
-                startActivity(Intent(this,ProfileActivity::class.java))
+                startActivity(Intent(this,DashboardAcitivty::class.java))
                 finish()
             }
             .addOnFailureListener {e->
@@ -104,7 +103,7 @@ class LoginActivity : AppCompatActivity() {
         //get current user
         val firebaseUser = firebaseAuth.currentUser
         if (firebaseUser != null){
-            startActivity(Intent(this, ProfileActivity::class.java))
+            startActivity(Intent(this, DashboardAcitivty::class.java))
             finish()
         }
     }
