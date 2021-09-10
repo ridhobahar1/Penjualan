@@ -12,7 +12,7 @@ class BarangActivity : AppCompatActivity() {
         setContentView(R.layout.activity_barang)
 
         val headingBarang : TextView = findViewById(R.id.heading)
-
+        val hargaBarang : TextView = findViewById(R.id.tvHargaBarang)
 
         val bundle: Bundle?= intent.extras
         val heading = bundle!!.getString("heading")

@@ -1,4 +1,4 @@
 package com.example.penjualan
 
-data class Barang(var titleImage : Int, var heading : String)
+data class Barang(var titleImage : Int, var heading : String, var hargaBarang : Int)
 

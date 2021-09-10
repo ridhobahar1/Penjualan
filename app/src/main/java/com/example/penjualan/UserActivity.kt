@@ -13,6 +13,7 @@ class UserActivity : AppCompatActivity() {
 
     private lateinit var actionBar: ActionBar
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_user)

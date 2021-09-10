@@ -8,6 +8,10 @@ plugins {
 android {
     compileSdk 31
 
+    dataBinding {
+        enabled = true
+    }
+
     defaultConfig {
         applicationId "com.example.penjualan"
         minSdk 21

@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Penjualan">
         <activity
+            android:name=".BayarActivity"
+            android:exported="true" />
+        <activity
             android:name=".BarangActivity"
             android:exported="true" />
         <activity

@@ -16,6 +16,7 @@ class PenjualanActivity : AppCompatActivity() {
     private lateinit var  newArrayList: ArrayList<Barang>
     lateinit var imageId : Array<Int>
     lateinit var heading : Array<String>
+    lateinit var hargaBarang: Array<Int>
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -45,6 +46,15 @@ class PenjualanActivity : AppCompatActivity() {
             "Mouse Pad Gaming HP RGB",
             "Graphic Card MSI Gaming Trio X 3090",
         )
+        hargaBarang = arrayOf(
+            250000,
+            1500000,
+            500000,
+            1200000,
+            120000,
+            90000,
+            10000000
+        )
 
         newRecyclerView = findViewById(R.id.rv_recyclerView)
         newRecyclerView.layoutManager = LinearLayoutManager(this)
@@ -59,7 +69,7 @@ class PenjualanActivity : AppCompatActivity() {
     private fun getUserdata(){
 
         for (i in imageId.indices){
-            val barang = Barang(imageId[i],heading[i])
+            val barang = Barang(imageId[i],heading[i],hargaBarang[i])
             newArrayList.add(barang)
         }
         newRecyclerView.adapter = MyAdapter(newArrayList)
