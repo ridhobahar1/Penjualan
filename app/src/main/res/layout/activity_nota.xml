@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Nota">
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="190dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="Kembalian"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView25"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_uangkembalian"
+        android:layout_width="73dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="Rp 0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_uangmasuk"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="190dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:text="Tunai"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView22"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_uangmasuk"
+        android:layout_width="73dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:text="Rp 120.000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView22"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="190dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="16dp"
+        android:text="Total Transaksi"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView19"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_totaltransaksi"
+        android:layout_width="73dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="Rp 120.000"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView19"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:text="Jml"
+        app:layout_constraintEnd_toStartOf="@+id/textView13"
+        app:layout_constraintStart_toEndOf="@+id/textView12"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <ImageView
+        android:id="@+id/iv_toko"
+        android:layout_width="63dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/valo" />
+
+    <TextView
+        android:id="@+id/tv_namatoko"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Bahars.co"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_toko" />
+
+    <TextView
+        android:id="@+id/tv_nomortoko"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="08123456789"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_namatoko" />
+
+    <TextView
+        android:id="@+id/tv_alamattoko"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="JL. puri indah no 21f1 surabaya"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_nomortoko" />
+
+    <TextView
+        android:id="@+id/tv_waktutransaksi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:text="13 Sep 2021 13:46"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_alamattoko"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_serialnumbernota"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="NOTA:  5C919CAA00"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_waktutransaksi" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="379dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
+        android:textAlignment="inherit"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_serialnumbernota" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="379dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
+        android:textAlignment="inherit"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvhargabarang" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="379dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
+        android:textAlignment="inherit"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Barang"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="Total"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <TextView
+        android:id="@+id/tv_barang"
+        android:layout_width="144dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="Keyboard Gaming Asus Warfaction"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+    <TextView
+        android:id="@+id/tvhargabarang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:text="Rp. 120.000 / Pcs"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_barang" />
+
+    <TextView
+        android:id="@+id/tv_jumlahbarang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:text="1"
+        app:layout_constraintEnd_toStartOf="@+id/tv_totalperbarang"
+        app:layout_constraintStart_toEndOf="@+id/tv_barang"
+        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+    <TextView
+        android:id="@+id/tv_totalperbarang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="120.000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints">
+
+
+        <Button
+            android:id="@+id/btn_cetaknota"
+            style="@style/Widget.MaterialComponents.Button.Icon"
+            android:layout_width="160dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="10dp"
+            android:backgroundTint="#FF0000"
+            android:text="Cetak Nota"
+            android:textColor="#FFFFFF"
+            app:icon="@drawable/ic_cetaknota"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <Button
+            android:id="@+id/btn_bagikan"
+            style="@style/Widget.MaterialComponents.Button.Icon"
+            android:layout_width="160dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="#FF0000"
+            android:shadowColor="#FF0000"
+            android:text="Bagikan"
+            android:textColor="#FFFFFF"
+            app:icon="@drawable/ic_bagikan"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

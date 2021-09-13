@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#34E65F5F"
+    tools:context=".OkbayarActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="238dp"
+        android:layout_height="306dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ceklis" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="sans-serif"
+        android:text="Transaksi berhasil dicatat"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+        android:textColor="#FF0000"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/btnCetaknota"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#FF0000"
+        android:text="Cetak Nota"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

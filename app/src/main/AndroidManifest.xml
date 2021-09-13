@@ -12,6 +12,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Penjualan">
         <activity
+            android:name=".Nota"
+            android:exported="true" />
+        <activity
+            android:name=".OkbayarActivity"
+            android:exported="true" />
+        <activity
+            android:name=".s"
+            android:exported="true"
+            android:label="@string/title_activity_s"
+            android:theme="@style/Theme.Penjualan.NoActionBar" />
+        <activity
             android:name=".BayarActivity"
             android:exported="true" />
         <activity
